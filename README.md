@@ -10,25 +10,26 @@ This repository contains a set of small Python scripts to fetch raw data from th
 
 ```text
 project-root/
-??? DropsTab_API_key.txt       # file with API key (first line)
-??? dropstab_base.py           # shared config + HTTP helper
-??? run_all_dropstab.py        # convenience runner for all scripts
-??? data/
-?   ??? raw/                   # JSON snapshots produced by scripts
-??? endpoints/
-    ??? coins/
-    ?   ??? fetch_all_coins.py
-    ?   ??? fetch_all_coins_supported.py
-    ??? token_unlocks/
-    ?   ??? fetch_all_token_unlocks.py
-    ?   ??? fetch_all_token_unlocks_supported_coins.py
-    ??? funding_rounds/
-    ?   ??? fetch_all_funding_rounds.py
-    ??? investors/
-    ?   ??? fetch_all_investors.py
-    ??? history/
-    ?   ??? fetch_fear_index_history.py
-    ??? crypto_activities/
-    ?   ??? fetch_all_crypto_activities.py
-    ??? exchanges/
-        ??? fetch_all_exchanges.py
+  DropsTab_API_key.txt           # file with API key (first line, not committed)
+  dropstab_base.py               # shared config + HTTP helper
+  run_all_dropstab.py            # convenience runner for all scripts
+  requirements.txt               # Python dependencies
+  data/                          # created automatically when running dropstab_base.py, not committed by default
+    raw/                         # JSON snapshots produced by scripts
+  endpoints/
+    coins/
+      fetch_all_coins.py
+      fetch_all_coins_supported.py
+    token_unlocks/
+      fetch_all_token_unlocks.py
+      fetch_all_token_unlocks_supported_coins.py
+    funding_rounds/
+      fetch_all_funding_rounds.py
+    investors/
+      fetch_all_investors.py
+    history/
+      fetch_fear_index_history.py
+    crypto_activities/
+      fetch_all_crypto_activities.py
+    exchanges/
+      fetch_all_exchanges.py
